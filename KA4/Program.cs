@@ -85,7 +85,7 @@ namespace KA4_framework
             return GetAdjacencyLists(graph, dist, prev);
         }
 
-        private static (int weight, List<List<int>> adjLists) GetAdjacencyLists(int[,] graph, int[] dist, int[] prev)
+        static (int weight, List<List<int>> adjLists) GetAdjacencyLists(int[,] graph, int[] dist, int[] prev)
         {
             List<List<int>> adjacencyLists = new List<List<int>>();
             int fullWeight = 0;
